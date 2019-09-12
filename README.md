@@ -1,12 +1,15 @@
 # esp32-ble2mqtt-docker
 
 Docker image for the esp32-ble2mqtt project.
-To run a container: 
+To run the container: 
 ```sh
-$ docker run --device=<serial device port> -v <your config.json file>:/data/config.json diuf/esp32-ble2mqtt
+$ docker run -v <your data folder>:/data diuf/esp32-ble2mqtt
 ```
 
 For instance: 
 ```sh
-$ docker run --device=/dev/ttyUSB0 -v ~/Desktop/config.json:/data/config.json diuf/esp32-ble2mqtt
+$ docker run -v ~/Desktop/data:/data diuf/esp32-ble2mqtt
 ```
+The directory (e.g. `~/Desktop/data`) mounted as a volume must contain a valid 
+`config.json` file. Once the container has finished running, the image to be 
+flashed on the esp32 should be present in this directory.
