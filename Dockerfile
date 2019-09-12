@@ -20,5 +20,7 @@ RUN cp /etc/ssl/certs/QuoVadis_Root_CA_2.pem data/
 ENV BATCH_BUILD=1
 RUN make; exit 0
 
-CMD cp /data/config.json data/; make; cp /esp/esp32-ble2mqtt/build/ble2mqtt.bin /data/
+COPY script.sh .
+
+CMD ["/bin/bash", "script.sh"]
 
