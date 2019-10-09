@@ -12,7 +12,7 @@ ENV PATH="/esp/xtensa-esp32-elf/bin:$PATH"
 RUN git clone -b v3.2.2 --recursive https://github.com/espressif/esp-idf.git
 ENV IDF_PATH=/esp/esp-idf
 
-RUN git clone --branch gps --recursive https://github.com/DurandA/esp32-ble2mqtt.git
+RUN git clone --branch m5stickc --recursive https://github.com/DurandA/esp32-ble2mqtt.git
 WORKDIR /esp/esp32-ble2mqtt
 
 RUN cp /etc/ssl/certs/QuoVadis_Root_CA_2.pem data/
