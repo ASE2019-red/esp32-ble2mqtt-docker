@@ -12,4 +12,8 @@ $ docker run -v $PWD/data:/data diuf/esp32-ble2mqtt
 ```
 The directory (e.g. `~/Desktop/data`) mounted as a volume must contain a valid 
 `config.json` file. Once the container has finished running, the image to be 
-flashed on the esp32 should be present in this directory.
+flashed on the esp32 should be present in this directory. docker run -v $PWD/data:/data diuf/esp32-ble2mqtt
+
+
+You can find detailed service and characteristic definitions here: 
+https://nordicsemiconductor.github.io/Nordic-Thingy52-FW/documentation/firmware_architecture.html
