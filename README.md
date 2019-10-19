@@ -22,7 +22,7 @@ esptool.py write_flash 0xd000 build/ota_data_initial.bin 0x1000 build/bootloader
 ```
 
 ## Mosquitto
-To test the MQTT broker you may use Mosquitto. Place the provided config file `mosquitto/mosquitto.conf` under `~/.conf/mosquitto/`.
+To test the MQTT broker you may use Mosquitto. Place the provided config file `mosquitto/mosquitto_pub` under `$HOME/.config/mosquitto_pub`.
 
 
 ## Links
