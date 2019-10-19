@@ -21,7 +21,11 @@ Go to `data` directory and run the command
 esptool.py write_flash 0xd000 build/ota_data_initial.bin 0x1000 build/bootloader.bin 0x10000 build/ble2mqtt.bin 0x8000 build/partitions.bin 0x310000 build/spiffs.bin 0x350000 build/spiffs.bin
 ```
 
+## Mosquitto
+To test the MQTT broker you may use Mosquitto. Place the provided config file `mosquitto/mosquitto.conf` under `~/.conf/mosquitto/`.
 
+
+## Links
 You can find detailed service and characteristic definitions here: 
 https://nordicsemiconductor.github.io/Nordic-Thingy52-FW/documentation/firmware_architecture.html
 
