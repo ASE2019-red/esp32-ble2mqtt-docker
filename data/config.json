@@ -16,16 +16,15 @@
   },
   "ble": {
     "whitelist": [
-      "e3:dc:75:9c:04:6f",
       "e8:e0:72:6b:92:a3"
     ],
     "services": {
       "whitelist": [
+        "ef680100-9b35-4933-9b10-52ffa9740042",
         "ef680200-9b35-4933-9b10-52ffa9740042",
         "ef680300-9b35-4933-9b10-52ffa9740042",
-        "0000ffe0-0000-1000-8000-00805f9b34fb",
         "ef680400-9b35-4933-9b10-52ffa9740042",
-        "EF680500-9B35-4933-9B10-52FFA9740042"
+        "ef680500-9b35-4933-9b10-52ffa9740042"
       ],
       "definitions": {
         "ef680100-9b35-4933-9b10-52ffa9740042": {
@@ -39,6 +38,9 @@
         },
         "ef680400-9b35-4933-9b10-52ffa9740042": {
           "name": "Thingy Motion Service"
+        },
+        "ef680500-9b35-4933-9b10-52ffa9740042": {
+          "name": "Thingy Sound Service"
         }
       }
     },
@@ -116,12 +118,12 @@
         "ef68040a-9b35-4933-9b10-52ffa9740042": {
           "name": "Thingy Gravity Characteristic",
           "types": [
-            "float12",
-            "float12",
-            "float12"
+            "float4",
+            "float4",
+            "float4"
           ]
         },
-        "EF680504-9B35-4933-9B10-52FFA9740042": {
+        "ef680504-9b35-4933-9b10-52ffa9740042": {
           "name":"Thingy Microphone Characteristic"
         }
       }
