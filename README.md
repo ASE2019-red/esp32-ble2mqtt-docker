@@ -31,3 +31,12 @@ https://nordicsemiconductor.github.io/Nordic-Thingy52-FW/documentation/firmware_
 
 esptool.py documentation can be found here:
 https://github.com/espressif/esptool
+
+BLE2MQTT documentation:
+https://github.com/DurandA/esp32-ble2mqtt
+
+Project description:
+https://duranda.github.io/ase2019-docs/project-2019
+
+Thingy Nodejs library:
+https://github.com/NordicPlayground/Nordic-Thingy52-Nodejs/blob/master/lib/thingy.js

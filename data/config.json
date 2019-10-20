@@ -55,7 +55,8 @@
         "ef680301-9b35-4933-9b10-52ffa9740042",
         "ef680302-9b35-4933-9b10-52ffa9740042",
         "ef68040a-9b35-4933-9b10-52ffa9740042",
-        "EF680504-9B35-4933-9B10-52FFA9740042"
+        "ef680501-9b35-4933-9b10-52ffa9740042",
+        "ef680504-9b35-4933-9b10-52ffa9740042"
       ],
       "definitions": {
         "ef680101-9b35-4933-9b10-52ffa9740042": {
@@ -118,9 +119,16 @@
         "ef68040a-9b35-4933-9b10-52ffa9740042": {
           "name": "Thingy Gravity Characteristic",
           "types": [
-            "float4",
-            "float4",
-            "float4"
+            "float",
+            "float",
+            "float"
+          ]
+        },
+        "ef680501-9b35-4933-9b10-52ffa9740042": {
+          "name":"Thingy Sound Config Characteristic",
+          "types": [
+            "uint8",
+            "uint8"
           ]
         },
         "ef680504-9b35-4933-9b10-52ffa9740042": {
