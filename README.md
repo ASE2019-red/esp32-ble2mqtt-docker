@@ -22,7 +22,19 @@ esptool.py write_flash 0xd000 build/ota_data_initial.bin 0x1000 build/bootloader
 ```
 
 ## Mosquitto
-To test the MQTT broker you may use Mosquitto. Place the provided config file `mosquitto/mosquitto_pub` under `$HOME/.config/mosquitto_pub`.
+To test the MQTT broker you may use Mosquitto. Place the provided config file [mosquitto_pub](./mosquitto/mosquitto_sub) under `$HOME/.config/mosquitto_pub`.
+
+
+Here some example subscriptions for the Thingy with mac address `e8:e0:72:6b:92:a3`:
+
+```
+mosquitto_sub -t 'e8:e0:72:6b:92:a3/Thingy Motion Service/Thingy Gravity Characteristic'
+```
+
+```
+mosquitto_sub -t 'e8:e0:72:6b:92:a3/Thingy Sound Service/Thingy Microphone Characteristic'
+```
+
 
 
 ## Links
