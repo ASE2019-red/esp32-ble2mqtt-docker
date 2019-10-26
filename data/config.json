@@ -23,8 +23,7 @@
         "ef680100-9b35-4933-9b10-52ffa9740042",
         "ef680200-9b35-4933-9b10-52ffa9740042",
         "ef680300-9b35-4933-9b10-52ffa9740042",
-        "ef680400-9b35-4933-9b10-52ffa9740042",
-        "ef680500-9b35-4933-9b10-52ffa9740042"
+        "ef680400-9b35-4933-9b10-52ffa9740042"
       ],
       "definitions": {
         "ef680100-9b35-4933-9b10-52ffa9740042": {
@@ -38,75 +37,21 @@
         },
         "ef680400-9b35-4933-9b10-52ffa9740042": {
           "name": "Thingy Motion Service"
-        },
-        "ef680500-9b35-4933-9b10-52ffa9740042": {
-          "name": "Thingy Sound Service"
         }
       }
     },
     "characteristics": {
       "whitelist": [
-        "ef680101-9b35-4933-9b10-52ffa9740042",
         "ef680201-9b35-4933-9b10-52ffa9740042",
-        "ef680202-9b35-4933-9b10-52ffa9740042",
-        "ef680203-9b35-4933-9b10-52ffa9740042",
-        "ef680204-9b35-4933-9b10-52ffa9740042",
-        "ef680205-9b35-4933-9b10-52ffa9740042",
-        "ef680301-9b35-4933-9b10-52ffa9740042",
         "ef680302-9b35-4933-9b10-52ffa9740042",
         "ef68040a-9b35-4933-9b10-52ffa9740042",
-        "ef680501-9b35-4933-9b10-52ffa9740042",
-        "ef680504-9b35-4933-9b10-52ffa9740042"
+        "ef680406-9b35-4933-9b10-52ffa9740042"
       ],
       "definitions": {
-        "ef680101-9b35-4933-9b10-52ffa9740042": {
-          "name": "Thingy Name Characteristic",
-          "types": [
-            "utf8s"
-          ]
-        },
         "ef680201-9b35-4933-9b10-52ffa9740042": {
           "name": "Thingy Temperature Characteristic",
           "types": [
             "sint8",
-            "uint8"
-          ]
-        },
-        "ef680202-9b35-4933-9b10-52ffa9740042": {
-          "name": "Thingy Pressure Characteristic",
-          "types": [
-            "sint32",
-            "uint8"
-          ]
-        },
-        "ef680203-9b35-4933-9b10-52ffa9740042": {
-          "name": "Thingy Humidity Characteristic",
-          "types": [
-            "uint8"
-          ]
-        },
-        "ef680204-9b35-4933-9b10-52ffa9740042": {
-          "name": "Thingy Air Quality Characteristic",
-          "types": [
-            "uint16",
-            "uint16"
-          ]
-        },
-        "ef680205-9b35-4933-9b10-52ffa9740042": {
-          "name": "Thingy Light Intensity Characteristic",
-          "types": [
-            "uint16",
-            "uint16",
-            "uint16",
-            "uint16"
-          ]
-        },
-        "ef680301-9b35-4933-9b10-52ffa9740042": {
-          "name": "Thingy LED Characteristic",
-          "types": [
-            "uint8",
-            "uint8",
-            "uint8",
             "uint8"
           ]
         },
@@ -116,23 +61,22 @@
             "boolean"
           ]
         },
+        "ef680406-9b35-4933-9b10-52ffa9740042": {
+          "name": "Thingy Motion Raw data",
+          "types": [
+            "sint16",
+            "sint16",
+            "sint16",
+            "sint16",
+            "sint16",
+            "sint16",
+            "sint16",
+            "sint16",
+            "sint16"
+          ]
+        },
         "ef68040a-9b35-4933-9b10-52ffa9740042": {
-          "name": "Thingy Gravity Characteristic",
-          "types": [
-            "float",
-            "float",
-            "float"
-          ]
-        },
-        "ef680501-9b35-4933-9b10-52ffa9740042": {
-          "name":"Thingy Sound Config Characteristic",
-          "types": [
-            "uint8",
-            "uint8"
-          ]
-        },
-        "ef680504-9b35-4933-9b10-52ffa9740042": {
-          "name":"Thingy Microphone Characteristic"
+          "name": "Thingy Gravity Characteristic"
         }
       }
     }
